@@ -1,0 +1,30 @@
+<div class="container-fluid mt-4">
+  <h1>Welcome to your WeatherForecast Random</h1>
+  <mat-divider class="divider-custom mb-4"></mat-divider>
+  <button (click)="refresh()" mat-flat-button color="primary" class="mb-4 p-4">
+    Refresh
+  </button>
+  <mat-grid-list cols="5" rowHeight="400px">
+    <mat-grid-tile *ngFor="let item of data">
+      <mat-card class="content-card">
+        <mat-card-header>
+          <mat-card-subtitle class="mat-card-subtitle-custom mb-3">
+            <span class="display-7">{{ item.date }}</span></mat-card-subtitle
+          >
+          <mat-card-title class="mb-3"
+            ><h1 class="display-6">{{ item.summary }}</h1></mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content>
+          <p class="display-6">Temperature C {{ item.temperatureC }}</p>
+          <p class="display-6">Temperature F {{ item.temperatureF }}</p>
+          <mat-divider></mat-divider>
+        </mat-card-content>
+        <mat-card-actions class="actions-card">
+          <button mat-button color="accent">Like</button>
+          <button mat-button color="accent">Share</button>
+        </mat-card-actions>
+      </mat-card></mat-grid-tile
+    >
+  </mat-grid-list>
+</div>

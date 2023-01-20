@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    image: maidensix00/backend
+    expose:
+      - 5031
+    ports:
+      - "5031:5031"
+  frontend:
+    build: ./frontend
+    image: maidensix00/frontend
+    expose:
+      - 4200
+    ports:
+      - "4200:4200"

@@ -1,0 +1,22 @@
+.content-card {
+  max-width: 600px;
+
+  background-color: #fff;
+}
+
+.actions-card {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/* .container {
+    padding: 2rem;
+} */
+
+.divider-custom {
+  background-color: #eeeeee;
+}
+
+.mat-card-subtitle-custom {
+  color: red;
+}
